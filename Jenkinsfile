@@ -18,6 +18,10 @@ pipeline {
                 sh """
                 ./mvnw clean install
 """
+                sh """
+                echo "hello package test"
+"""
+                junit "**/target/surefire-reports/*.xml"
             }
         }
 
