@@ -3,12 +3,12 @@ pipeline {
     agent any
 
     stages {
-        when {
-            expression {
-                GIT_BRANCH == "hello"
-            }
-        }
         stage("build it") {
+            when {
+                expression {
+                    GIT_BRANCH == "hello"
+                }
+            }
             steps {
                 sh """
                 ./mvnw clean install
