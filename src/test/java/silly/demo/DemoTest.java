@@ -8,4 +8,9 @@ public class DemoTest {
     void shouldWork() {
 
     }
+
+    @Test
+    void anotherTest() {
+
+    }
 }
