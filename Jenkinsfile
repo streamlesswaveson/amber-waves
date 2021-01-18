@@ -11,7 +11,7 @@ pipeline {
         stage("build it") {
             when {
                 expression {
-                    GIT_BRANCH == "hello"
+                    GIT_BRANCH == "origin/master"
                 }
             }
             steps {
