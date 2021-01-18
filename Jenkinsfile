@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage("build it") {
             steps {
-                """
+                sh """
                 ./mvnw clean install
 """
             }
